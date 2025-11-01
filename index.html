@@ -3,11 +3,40 @@
 <head>
   <meta charset="utf-8">
   <title>Deez Nutz Songs</title>
-  <style>
-            body {
-                background-color: #FBCBF1;
-            }
-        </style>
+ <style>
+    body {
+      background-color: #FBCBF1;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+   
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .floating-btn:hover {
+      background-color: #005fa3;
+      transform: scale(1.1);
+    }
+</style>
 </head>
 <body>
   <h1>Welcome to Deep's Personal Website. </h1>
@@ -19,7 +48,7 @@
     <button onclick="window.location.href='contact.html'">Contact</button>
     <button onclick="window.location.href='Personal Projects.html'">Personal Projects</button>
     <button onclick="window.location.href='https://www.linkedin.com/in/dxcent-deep/'">LinkedIn</button>
-    <button onclick="window.location.href='https://www.instagram.com/deeppatel8126/'">Instagram</button>
+    <button class="floating-btn" onclick="window.location.href='https://www.instagram.com/deeppatel8126/'">Instagram</button>
   </p>
 </body>
 </html>
